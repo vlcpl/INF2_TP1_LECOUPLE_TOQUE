@@ -43,6 +43,18 @@ public class Client{
         return clientNumber;
     }
 
+    
+    
+    public Client() {
+    }
+
+    public Client(String clientNumber, String lastName, String firstName, Timestamp birthDate) {
+        this.clientNumber = clientNumber;
+        this.lastName = lastName;
+        this.firstName = firstName;
+        this.birthDate = birthDate;
+    }
+    
     public void setClientNumber(String clientNumber) {
         this.clientNumber = clientNumber;
     }

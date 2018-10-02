@@ -30,6 +30,16 @@ public class BankBranch {
     @Column(nullable = false)
     private String address;
 
+    
+    
+    public BankBranch() {
+    }
+
+    public BankBranch(String code, String address) {
+        this.code = code;
+        this.address = address;
+    }
+
     public String getCode() {
         return code;
     }

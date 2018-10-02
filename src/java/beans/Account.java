@@ -44,6 +44,19 @@ public class Account {
     @Column(nullable = false)
     private double totalMoney;
 
+    
+    
+    public Account() {
+    }
+
+    public Account(String accountNumber, String label, String IBAN, BankBranch bankBranch, double totalMoney) {
+        this.accountNumber = accountNumber;
+        this.label = label;
+        this.IBAN = IBAN;
+        this.bankBranch = bankBranch;
+        this.totalMoney = totalMoney;
+    }
+
     public String getAccountNumber() {
         return accountNumber;
     }
