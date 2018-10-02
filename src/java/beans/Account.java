@@ -43,4 +43,46 @@ public class Account {
      */
     @Column(nullable = false)
     private double totalMoney;
+
+    public String getAccountNumber() {
+        return accountNumber;
+    }
+
+    public void setAccountNumber(String accountNumber) {
+        this.accountNumber = accountNumber;
+    }
+
+    public String getLabel() {
+        return label;
+    }
+
+    public void setLabel(String label) {
+        this.label = label;
+    }
+
+    public String getIBAN() {
+        return IBAN;
+    }
+
+    public void setIBAN(String IBAN) {
+        this.IBAN = IBAN;
+    }
+
+    public BankBranch getBankBranch() {
+        return bankBranch;
+    }
+
+    public void setBankBranch(BankBranch bankBranch) {
+        this.bankBranch = bankBranch;
+    }
+
+    public double getTotalMoney() {
+        return totalMoney;
+    }
+
+    public void setTotalMoney(double totalMoney) {
+        this.totalMoney = totalMoney;
+    }
+    
+    
 }

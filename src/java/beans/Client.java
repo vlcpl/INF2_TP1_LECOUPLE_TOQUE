@@ -4,7 +4,7 @@
  * and open the template in the editor.
  */
 package beans;
-
+import java.sql.Timestamp;
 import javax.persistence.*;
 
 /**
@@ -37,6 +37,39 @@ public class Client{
      * Date de naissance du client
      */
     @Column(nullable = false)
-    @Temporal(TemporalType.DATE)
-    private String birthDate;
+    private Timestamp birthDate;
+
+    public String getClientNumber() {
+        return clientNumber;
+    }
+
+    public void setClientNumber(String clientNumber) {
+        this.clientNumber = clientNumber;
+    }
+
+    public String getLastName() {
+        return lastName;
+    }
+
+    public void setLastName(String lastName) {
+        this.lastName = lastName;
+    }
+
+    public String getFirstName() {
+        return firstName;
+    }
+
+    public void setFirstName(String firstName) {
+        this.firstName = firstName;
+    }
+
+    public Timestamp getBirthDate() {
+        return birthDate;
+    }
+
+    public void setBirthDate(Timestamp birthDate) {
+        this.birthDate = birthDate;
+    }
+    
+    
 }
