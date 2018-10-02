@@ -5,10 +5,28 @@
  */
 package beans;
 
+import javax.persistence.*;
 /**
  *
  * @author Valentin LECOUPLE & Yann Toqué
  */
+
+/**
+ * Cette classe correspond à l'Agence bancaire
+ */
+@Entity
 public class BankBranch {
     
+    /**
+     * Clé primaire de l'entité BankBranch
+     */
+    @Id
+    @Column(nullable = false, length = 5)
+    private String code;
+    
+    /**
+     * Adresse de la BankBranch
+     */
+    @Column(nullable = false)
+    private String address;
 }
