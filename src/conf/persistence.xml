@@ -4,6 +4,8 @@
         <!-- Définition de l'implémentation de JPA utilisée -->
         <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
         <class>beans.BankBranch</class>
+        <class>beans.Account</class>
+        <class>beans.Client</class>
         <jta-data-source>java:app/bank_datasource</jta-data-source>
         <exclude-unlisted-classes>false</exclude-unlisted-classes>
         <properties>
