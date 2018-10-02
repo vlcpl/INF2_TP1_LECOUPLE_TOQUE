@@ -5,10 +5,22 @@
  */
 package beans;
 
+import javax.persistence.*;
+
 /**
  *
  * @author Valentin LECOUPLE & Yann Toqué
  */
-public class Client {
-    
+@Entity
+public class Client{
+    @Id
+    @Column(nullable = false, length = 8)
+    private String clientNumber;
+    @Column(nullable = false)
+    private String lastName;
+    @Column(nullable = false)
+    private String firstName;
+    @Column(nullable = false)
+    @Temporal(TemporalType.DATE)
+    private String birthDate;
 }
