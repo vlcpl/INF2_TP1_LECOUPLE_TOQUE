@@ -7,7 +7,7 @@ package Service;
 
 /**
  *
- * @author Valentin
+ * @author Valentin lECOUPLE & Yann TOQUE
  */
 public class ServiceAccount {
     
