@@ -7,7 +7,7 @@ package bank;
 
 /**
  *
- * @author Valentin
+ * @author Valentin LECOUPLE & Yann Toqué
  */
 public class BankBranch {
     
