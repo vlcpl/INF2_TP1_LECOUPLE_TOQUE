@@ -7,7 +7,7 @@ package Service;
 
 /**
  *
- * @author Valentin
+ * @author Valentin LECOUPLE & Yann TOQUE
  */
 public class ServiceClient {
     
