@@ -19,7 +19,7 @@ public class Account {
     @Id
     @Column(nullable = false, length = 11)
     private String accountNumber;
-  
+    
     /**
      * Label du compte
      */

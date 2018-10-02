@@ -14,7 +14,7 @@ import javax.persistence.*;
  */
 public class DAO<T> {
 
-    @PersistenceContext(unitName = "JPA_Unit")
+    @PersistenceContext(unitName = "JPA_Unit2")
     private EntityManager em;
 
     public void create(T entity) {
